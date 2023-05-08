@@ -34,10 +34,10 @@ public class MenuPrincipal extends javax.swing.JFrame {
         modificar = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setTitle("Libreta de teléfonos");
+        setTitle("Agenda telefónica");
 
         texto.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        texto.setText("Libreta de teléfonos");
+        texto.setText("Agenda telefónica");
 
         añadir.setText("Añadir");
         añadir.addActionListener(new java.awt.event.ActionListener() {
@@ -58,28 +58,29 @@ public class MenuPrincipal extends javax.swing.JFrame {
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(63, 63, 63)
-                        .addComponent(añadir)
-                        .addGap(30, 30, 30)
-                        .addComponent(modificar))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(91, 91, 91)
-                        .addComponent(texto)))
+                .addGap(63, 63, 63)
+                .addComponent(añadir)
+                .addGap(30, 30, 30)
+                .addComponent(modificar)
                 .addContainerGap(54, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(texto)
+                .addGap(93, 93, 93))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(57, 57, 57)
+                .addContainerGap(59, Short.MAX_VALUE)
                 .addComponent(texto)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 56, Short.MAX_VALUE)
+                .addGap(54, 54, 54)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(añadir)
                     .addComponent(modificar))
                 .addGap(45, 45, 45))
         );
+
+        getAccessibleContext().setAccessibleName("Agenda telefónica");
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
